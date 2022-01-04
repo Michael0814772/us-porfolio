@@ -9,7 +9,7 @@ const projectData = [
         title: "PORTFOLIO WEBSITE",
         image: "/portfolio.png",
         description: "An application developed using react, CSS and Boostrap",
-        link: "https://portfoliousawebsite.netlify.app/projects"
+        link: "https://portfoliousawebsite.netlify.app/"
     },
     {
         title: "POKEDEX",
