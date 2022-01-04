@@ -1,0 +1,148 @@
+.menu-icon {
+    color: orangered;
+    font-size: 70px;
+    margin: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.show-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 65vh;
+    width: 50%;
+    border-bottom-left-radius: 50%;
+    transition: all 0.5s;
+    background-color: #001220;
+    opacity: 0.95;
+    z-index: 2;
+}
+
+.hide-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;    
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    transition: all 0.5s;
+}
+
+ul li {
+    color: white;
+    list-style: none;
+    margin-top: 25px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.active-link {
+    border: 3px solid cyan;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.active-link a {
+    font-weight: bold;
+    color: cyan;
+}
+
+.contact img {
+    height: 50vh;
+    width: 100%;
+}
+
+input, textarea {
+    margin-top: 25px;
+    border: none !important;
+    background-color: #EBECF0 !important;
+    background: #EBECF0;
+    box-shadow: 5px 5px 0px #cacbce, -5px -5px 0px #ffffff !important;
+    border-radius: 20px !important;
+}
+
+.form-control:focus {
+    transform: scale(1.02);
+}
+
+.form-control {
+    box-shadow: none;
+}
+
+.contact button {
+    background-color: rgba(0, 0, 255, 0.74);
+    font-weight: bold;
+    color: white;
+}
+
+.contact button:hover {
+    background-color: blue;
+}
+
+.footer-content {
+    background-color: #001220;
+    text-align: center;
+    color: white;
+}
+
+.footer-icons svg {
+    color: white;
+    cursor: pointer;
+}
+
+.footer .footer-icon:hover {
+    color: cyan;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.letter {
+    color: cyan;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .show-header {
+        height: 100vh;
+        width: 100%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.397);
+        transition: width 0.5s;
+        z-index: 2;
+    }
+
+    .hide-header {
+        transition: width 0.5s;
+    }
+
+    .menu-icon {
+        font-size: 45px;
+    }
+
+    .contact {
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+
+    .contact-form {
+        padding: 15px !important;
+        margin: 15px !important;
+    }
+
+    .contact button {
+        width: 150px;
+    }
+}
